@@ -67,8 +67,14 @@ function addNodes(url, container, re) {
 
   const br = document.createElement('br');
   const a = document.createElement('a');
+  var url = new URL(url);
+  var website = new Array();
+  website[0] = 'Hostname : ' + url.host;
+  website[1] = 'Website URL : ' + url;
   a.href = url;
   a.innerText = url;
+  a.innerText = website;
+
   container.appendChild(a);
   container.appendChild(br);
 

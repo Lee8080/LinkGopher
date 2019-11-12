@@ -4,12 +4,30 @@
     <meta charset="utf-8">
     <title>Link Gopher</title>
     <link rel="stylesheet" href="css/linkgopher.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    .box{
+      height: auto;
+      width: auto;
+      background: rgb(222, 224, 223);
+      margin-top:15px;
+      border-radius: 15px;
+      padding : 15px 15px 15px 15px;
+    }
+    </style>
   </head>
   <body>
-    <div id="links" data-content="Links"></div>
-    <div id="domains" data-content="Domains"></div>
-    <h2 id="message" data-content="Please wait..."></h2>
-
+    <div class="container">
+      <h2 id="message" data-content="Please wait..."></h2>
+      <div class="box">
+        <h6 id="links" data-content="Links"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box">
+        <h6 id="domains" data-content="Domains"></div>
+      </div>
+    </div>
     <script src="js/linkgopher.js" charset="utf-8"></script>
   </body>
 </html>

@@ -72,7 +72,6 @@ function addNodes(url, container, re) {
   website[0] = 'Hostname : ' + url.host;
   website[1] = 'Website URL : ' + url;
   a.href = url;
-  a.innerText = url;
   a.innerText = website;
 
   container.appendChild(a);
